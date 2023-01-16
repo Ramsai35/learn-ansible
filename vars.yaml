@@ -15,5 +15,5 @@
     - name: accessing variable at task level
       ansible.builtin.debug:
         msg: URL == {{URL}}
-      vars_file:
-        - var.yml
+      vars:
+        URL: task.example.com
