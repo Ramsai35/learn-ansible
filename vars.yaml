@@ -2,7 +2,7 @@
    hosts: all
    connection: local
    vars:
-     URL:www.playlevel.com
+     URL: www.playlevel.com
    tasks:
      name: access a variable
      ansible.builtin.debug:
