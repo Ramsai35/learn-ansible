@@ -38,10 +38,4 @@
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
-- name:  accesing facts
-  hosts: all
-  connection: local
-  tasks:
-    - name: accessing facts
-      ansible.builtin.debug:
-        msg: Ansible Host name == {{ansible_fqdn}}
+
