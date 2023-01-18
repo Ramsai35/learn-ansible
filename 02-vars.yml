@@ -15,7 +15,7 @@
   vars_files:
     - var.yml
   tasks:
-    - name: accessing variable at play level
+    - name: accessing variable at file level
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
