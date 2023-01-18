@@ -46,16 +46,16 @@
       ansible.builtin.debug:
         msg: ansible Host name == {{ansible_fqdn}}
 
- - name: register
-   hosts: all
-   connection: local
-   tasks:
-     - name: access register
-       ansible.builtin.shell: uptime
-       register: out
-     - name: Print Out
-       ansible.buiiltin.debug:
-         msg: "{{out}}"
+- name: register
+  hosts: all
+  connection: local
+  tasks:
+    - name: access register
+      ansible.builtin.shell: uptime
+      register: out
+    - name: Print Out
+      ansible.buiiltin.debug:
+       msg: "{{out}}"
 
 
 
