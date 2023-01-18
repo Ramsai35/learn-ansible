@@ -38,4 +38,11 @@
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
+- name: accessing FQDN
+  hosts: all
+  connection: local
+  tasks:
+    - name: accessing FQDN
+      ansible.builtin.debug:
+        msg: ansible Host name == {{ansible_fqdn}}
 
